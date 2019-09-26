@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/student.view.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -68,6 +68,15 @@
                 <element signature="n#style#0;n#table#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#0;n#table#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XML.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="863">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -95,11 +104,11 @@
         <option value="$PROJECT_DIR$/controllers/student.php" />
         <option value="$PROJECT_DIR$/views/css/style.css" />
         <option value="$PROJECT_DIR$/controllers/XML.php" />
-        <option value="$PROJECT_DIR$/XML.php" />
         <option value="$PROJECT_DIR$/routes.php" />
         <option value="$PROJECT_DIR$/views/index.view.php" />
         <option value="$PROJECT_DIR$/JSON.php" />
         <option value="$PROJECT_DIR$/views/student.view.php" />
+        <option value="$PROJECT_DIR$/XML.php" />
       </list>
     </option>
   </component>
@@ -133,6 +142,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.gitattributes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -168,12 +178,12 @@
       <updated>1569323941044</updated>
       <workItem from="1569323943475" duration="80000" />
       <workItem from="1569324025096" duration="3151000" />
-      <workItem from="1569328077003" duration="66688000" />
+      <workItem from="1569328077003" duration="66846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69919000" />
+    <option name="totallyTimeSpent" value="70077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-82" width="1296" height="1000" extended-state="6" />
@@ -300,13 +310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XML.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -360,6 +363,13 @@
             <element signature="n#style#0;n#table#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#tr#0;n#table#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XML.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
         </state>
       </provider>
     </entry>

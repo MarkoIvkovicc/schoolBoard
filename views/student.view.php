@@ -3,8 +3,6 @@
     <?php  include 'views/css/style.css' ?>
 </style>
 
-<?php var_dump($_GET['id']); ?>
-
 <br>    <a href="/" style="padding-left: 2em; padding-top: 2em; font-weight: bold">Home</a>
 <br><br><br>
 
@@ -42,7 +40,6 @@
             $min = ($avg[$niz-1])->front_end_programming;
         }
     }
-    var_dump($min);
 
     if ($data[$_GET['id']-1]->board == 'CSM') {
         $print = $n/$s;

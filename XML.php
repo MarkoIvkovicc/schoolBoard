@@ -10,7 +10,6 @@ if (!mysqli_select_db($dbconnect,'schoolboarddb')) {
 }
 
 $table_id = 'student';
-//$query = "select * from subject";
 $query = "select student.id, student.firstName, student.lastName, student.board from $table_id left outer join subject on student.id=subject.id_student where board = 'CSMB'";
 $dbresult = mysqli_query( $dbconnect, $query) or die("Error on query $query");
 
@@ -33,4 +32,3 @@ while ($row = mysqli_fetch_assoc($dbresult)) {
 
 $xml_string = $doc->saveXML();
 $doc->save('studentsCSMB.xml');
-//echo $xml_string;
