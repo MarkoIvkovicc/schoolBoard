@@ -39,7 +39,7 @@
 
             <?php foreach ($xmls->children() as $xml) {
                 echo "<tr>";
-                echo "<td><a href=\"students?id=<?= $xml->id; ?> \">{$xml->id}</td>";
+                echo "<td><a href=students?id=" . $xml->id . "> {$xml->id}</td>";
                 echo "<td>{$xml->firstName}</td>";
                 echo "<td>{$xml->lastName}</td>";
                 echo "<td>{$xml->board}</td>";

@@ -18,25 +18,57 @@
     $niz = $_GET['id'];
     $n = 0;
     $s = 0;
+    $min = 0;
     if ( ($avg[$niz-1])->oop != null) {
         $n += $avg[$niz-1]->oop;
         $s += 1;
+        $min = ($avg[$niz-1])->oop;
     } if ( ($avg[$niz-1])->web_programming != null) {
         $n += $avg[$niz-1]->web_programming;
         $s += 1;
+        if ($min > ($avg[$niz-1])->web_programming) {
+            $min = ($avg[$niz-1])->web_programming;
+        }
     } if ( ($avg[$niz-1])->front_end_programming != null) {
         $n += $avg[$niz-1]->front_end_programming;
         $s += 1;
+        if ($min > ($avg[$niz-1])->front_end_programming) {
+            $min = ($avg[$niz-1])->front_end_programming;
+        }
     } if ( ($avg[$niz-1])->back_end_programming != null) {
         $n += $avg[$niz-1]->back_end_programming;
         $s += 1;
+        if ($min > ($avg[$niz-1])->front_end_programming) {
+            $min = ($avg[$niz-1])->front_end_programming;
+        }
     }
-    $print = $n/$s;
+    var_dump($min);
 
-    if ($print >= 7) {
-        $pass = 'PASS!';
-    } else {
-        $pass = "FAIL";
+    if ($data[$_GET['id']-1]->board == 'CSM') {
+        $print = $n/$s;
+        if ($print >= 7) {
+            $pass = 'PASS!';
+        } else {
+            $pass = "FAIL!";
+        }
+    } elseif ($data[$_GET['id']-1]->board == 'CSMB') {
+        if ($s > 2) {
+            $newN = $n - $min;
+            $print = $newN/$s;
+        }
+        else {
+            $print = $n/$s;
+        }
+
+        if (($avg[$niz-1])->oop ||
+            ($avg[$niz-1])->web_programming ||
+            ($avg[$niz-1])->front_end_programming ||
+            ($avg[$niz-1])->back_end_programming > 8) {
+            $pass = 'PASS';
+        }
+        else {
+            $pass = 'FAIL';
+        }
     }
 ?>
 <div style="font-size: 18px; font-weight: bold; padding-left: 40px;">
@@ -51,7 +83,6 @@
 <div style="padding-left: 100px">
 <?php
     $oop = array_column($avg, 'oop');
-//    var_dump($oop);
 ?>
     <table style="width: 450px; text-align: left">
         <tr style="font-weight: bold">
